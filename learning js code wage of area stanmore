@@ -1,0 +1,23 @@
+// Function to check if the wage is 20k or more
+const checkWage = (wage) => {
+    if (wage >= 20000) {
+        console.log(`Wage is £${wage}. This meets the requirement of £20,000 or more.`);
+        // Simulate a web search action
+        simulateWebSearch(wage);
+    } else {
+        console.log(`Wage is £${wage}. This does not meet the requirement.`);
+    }
+};
+
+// Function to simulate a web search
+const simulateWebSearch = (wage) => {
+    console.log(`Searching the web for jobs with a wage of £${wage} or more...`);
+    // Simulating search results (this is just a placeholder, in real cases you would fetch data from a web service)
+    setTimeout(() => {
+        console.log('Displaying web search results for high-paying jobs...');
+    }, 2000); // Simulate a 2-second delay for the search
+};
+
+// Example usage:
+checkWage(25000); // Should perform the "search"
+checkWage(18000); // Should not perform the search
